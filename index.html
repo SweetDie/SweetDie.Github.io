@@ -2,7 +2,8 @@
     <HEAD>
         <meta charset="utf=8">    
         <title>Сайт web-студії "Web-DECO"</title>  
-        <!--========== JAVA SCRIPT ========-->  
+        <!--========== JAVA SCRIPT ========-->
+        <script src="js/clock1.js"></script>  
         <script type="text/javascript">
         function send(){
             var valid = true;
@@ -22,6 +23,11 @@
                 return false;
             }
         }
+        </script>
+        <script>
+            window.onload = function(){
+                setInterval(clockPainting, 1000);
+            }
         </script>
         <!--===============================-->  
         <style>
@@ -52,6 +58,8 @@
             </tr>
             <tr>
                 <td width="30%" valign="top">
+                <center><canvas id="canvas" height="120" width="120"></canvas></center>
+                <hr>
                 <font size="5" color="navy"><h2>Новини</h2></font>
                 <font size="5">
                 <ul>
@@ -86,7 +94,7 @@
 		</TABLE>
 		
 		<p align="center">
-		<input type="submit" value="Зареєструватись" >
+		<input type="submit" onclick="send()" value="Зареєструватись" >
 		<input type="reset" value="Очистити" >
 		</p>
 		</form>
