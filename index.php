@@ -48,7 +48,7 @@
             <tr>
                 <td colspan="2">
                     <font size="4"><b>
-                        <a href="#">Головна</a>&nbsp;&nbsp;
+                        <a href="index.php">Головна</a>&nbsp;&nbsp;
                         <a href="#">Фотогалерея</a>&nbsp;&nbsp;
                         <a href="#">Телефони</a>&nbsp;&nbsp;
                         <a href="#">Статистика</a>&nbsp;&nbsp;
@@ -73,7 +73,7 @@
                 </font>
                 <hr>
 		<H1 align="center"><font color="green">Реєстрація</font></H1>
-		<form action="forma.php" method="post" onsubmit="retrun send()">
+		<form action="forma.php" method="post" onsubmit="return send()">
 		<TABLE align="center" bgcolor="#ccc">
 		<TR>
 		<TD><font color="green">Прізвище</font>: </TD>
